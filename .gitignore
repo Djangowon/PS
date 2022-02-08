@@ -2,3 +2,5 @@
 .vscode
 /venv
 .idea
+test.py
+test/

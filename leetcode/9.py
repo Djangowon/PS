@@ -1,4 +1,8 @@
+import time
+
 import self as self
+
+start_time = time.time()
 
 
 class Solution:
@@ -11,3 +15,7 @@ class Solution:
 
 x = -121
 print(Solution.isPalindrome(self, x))
+
+
+end_time = time.time()
+print("time :", end_time - start_time)
