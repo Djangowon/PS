@@ -8,3 +8,4 @@ class Solution:
         M=1000
 
         for i in range(len(s)):
+
