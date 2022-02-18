@@ -19,10 +19,6 @@ def solution(n):
 
 print(solution(n))
 
-'''
-Time Complexity: O(len(...))
-'''
-
 
 def digit_reverse(n):
     return list(map(int, reversed(str(n))))

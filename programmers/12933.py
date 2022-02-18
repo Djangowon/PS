@@ -1,5 +1,5 @@
 '''
-Time Complexity: O(len(...))
+Time Complexity: O(n)
 '''
 
 n = int(input())
