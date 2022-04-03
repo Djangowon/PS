@@ -1,25 +1,21 @@
 '''
-Time Complexity: O(1)
+Time Complexity: O(n)
 '''
+
 
 n = int(input())
 m = int(input())
 
 
-def solution(n, m):
-    answer = []
-
-    for i in range(min(n, m), 0, -1):
-        if n % m == 0 and m % n == 0:
-            answer.append(i)
-            pass
-
-    for i in range(max(n, m), (n*m)+1):
-        if i % n == 0 and i % m == 0:
-            answer.append(i)
-            pass
+def gcdlcm(n, m):
+    a, b = max(n, m), min(n, m)
+    t = 1
+    while t > 0:
+        t = a % b
+        a, b = b, t
+    answer = [a, int(n*m/a)]
 
     return answer
 
 
-print(solution(n, m))
+print(gcdlcm(n,m))
