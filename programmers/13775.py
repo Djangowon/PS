@@ -10,7 +10,7 @@ def solution(L, x):
     while lower <= upper:
         middle = (lower + upper) //2
         if L[middle] == x:
-            idx = L.index(x)
+            idx = middle
             break
 
         elif L[middle] < x:
